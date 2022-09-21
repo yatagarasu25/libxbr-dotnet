@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>libxbr_dotnet</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\libxbr-standalone\vs2012\libxbr.vcxproj">
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\MathEx\MathEx.core.csproj" />
+    <ProjectReference Include="..\SystemEx\SystemEx.csproj" />
+  </ItemGroup>
+
+</Project>
